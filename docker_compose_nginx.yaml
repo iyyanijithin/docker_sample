@@ -1,0 +1,15 @@
+#Sample compose file to build nginx server
+#docker-compose -f docker_compose_nginx.yaml up
+
+---
+version : '3.1'
+services:
+  nginx_web_server:
+   image: nginx:latest
+   ports:
+    - '9080:80'
+   environment:
+    - NGINX_PORT=80
+...
+  
+  

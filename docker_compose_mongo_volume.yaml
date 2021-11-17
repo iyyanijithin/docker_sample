@@ -1,0 +1,21 @@
+#create a volume
+#docker volume create mongodata
+#docker volume ls
+---
+version : '3.1'
+services:
+  mongo_db:
+   image: mongo:latest
+   ports:
+    - '27018:27017'
+   environment:
+    - MONGO_INITDB_ROOT_USERNAME=admin
+    - MONGO_INITDB_ROOT_PASSWORD=password
+   volumes:
+    - mongodata:/data/db
+
+volumes:
+  mongodata:
+...
+  
+  

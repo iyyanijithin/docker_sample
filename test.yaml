@@ -1,0 +1,31 @@
+#this is comment in yaml
+#start of document
+#Learning different aspects of yaml file
+---
+name: "roger"
+occupation: "tennis"
+age: 23
+fav_number: 34
+birthday: 2021-11-17
+cars: null
+isGood: true
+
+
+#car object with attributes
+car:
+ type: "lambo"
+ supercar: "yes"
+
+
+#list of items
+hobbies:
+  - hiking
+  - riding
+
+movies: ["transformer","matrix"]
+
+friends:
+ - name: "rafa"
+ - name: "joker"
+...
+#end of document
